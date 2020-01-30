@@ -1,0 +1,20 @@
+<h1>This is the index page of instruments!</h1>
+
+<form action="/instruments/new">
+  <input type="submit" value="Lets put in a new instrument" />
+</form>
+
+<ul>
+  <% @instruments.each do |instrument| %>
+    <li>
+      <a href="/instruments/<%= instrument.id %>">
+        <%= instrument.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<form action="/">
+  <input type="submit" value="Lets go back" />
+</form>
+

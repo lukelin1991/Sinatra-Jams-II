@@ -1,5 +1,9 @@
 <h1>This is the index page of artists!</h1>
 
+<form action="/artists/new">
+  <input type="submit" value="lets put in a new Artist" />
+</form>
+
 <ul>
   <% @artists.each do |artist| %>
     <li>
@@ -9,3 +13,7 @@
     </li>
   <% end %>
 </ul>
+
+<form action="/">
+  <input type="submit" value="Lets go back" />
+</form>
